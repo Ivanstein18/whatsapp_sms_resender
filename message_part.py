@@ -2,10 +2,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 from whatsapp_part import send_whatsApp
+import setting
 
 
 url = "https://messages.google.com/web/conversations"
-driver = webdriver.Chrome(executable_path="/home/ivan/Documents/whatsapp_resender/chromedriver/chromedriver")
+driver = webdriver.Chrome(executable_path=setting.WEBDRIVER_PATH)
 
 
 try:
